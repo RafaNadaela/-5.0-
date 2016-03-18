@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TRReginsterViewController">
+            <connections>
+                <outlet property="passwordtext" destination="JE4-bv-dZM" id="mom-St-Ybc"/>
+                <outlet property="usernametextfield" destination="rKQ-Jr-U0V" id="ziP-h7-ePm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="背景000.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ysw-SL-nJO">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OSf-9q-pnh">
+                    <rect key="frame" x="40" y="135" width="240" height="128"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="输入框.png" translatesAutoresizingMaskIntoConstraints="NO" id="EVK-a9-Maa">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rKQ-Jr-U0V">
+                            <rect key="frame" x="10" y="20" width="220" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="2pj-dc-r7h"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JE4-bv-dZM">
+                            <rect key="frame" x="10" y="88" width="220" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="rAd-Yz-EmL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="JE4-bv-dZM" secondAttribute="trailing" constant="10" id="7Ca-zJ-3HD"/>
+                        <constraint firstItem="JE4-bv-dZM" firstAttribute="leading" secondItem="OSf-9q-pnh" secondAttribute="leading" constant="10" id="AMn-sD-xdv"/>
+                        <constraint firstAttribute="trailing" secondItem="EVK-a9-Maa" secondAttribute="trailing" id="BYc-dZ-Bf0"/>
+                        <constraint firstItem="EVK-a9-Maa" firstAttribute="top" secondItem="OSf-9q-pnh" secondAttribute="top" id="CFs-O6-xlh"/>
+                        <constraint firstAttribute="width" constant="240" id="Cdm-Ba-YUp"/>
+                        <constraint firstAttribute="bottom" secondItem="JE4-bv-dZM" secondAttribute="bottom" constant="10" id="DfT-wc-6vp"/>
+                        <constraint firstItem="rKQ-Jr-U0V" firstAttribute="leading" secondItem="OSf-9q-pnh" secondAttribute="leading" constant="10" id="R9M-SB-pyZ"/>
+                        <constraint firstAttribute="trailing" secondItem="rKQ-Jr-U0V" secondAttribute="trailing" constant="10" id="S7Q-oI-zXk"/>
+                        <constraint firstAttribute="bottom" secondItem="EVK-a9-Maa" secondAttribute="bottom" id="T3b-Dm-hqG"/>
+                        <constraint firstAttribute="height" constant="128" id="m1a-fo-56C"/>
+                        <constraint firstItem="EVK-a9-Maa" firstAttribute="leading" secondItem="OSf-9q-pnh" secondAttribute="leading" id="qcI-mR-f3u"/>
+                        <constraint firstItem="rKQ-Jr-U0V" firstAttribute="top" secondItem="OSf-9q-pnh" secondAttribute="top" constant="20" id="ucX-b0-OVx"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCe-DJ-1KO">
+                    <rect key="frame" x="145" y="329" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="KYe-u4-Sby"/>
+                        <constraint firstAttribute="height" constant="30" id="yYI-vY-ZlH"/>
+                    </constraints>
+                    <state key="normal" title="注册">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="reginsterbtn:" destination="-1" eventType="touchUpInside" id="GeC-oI-SgA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Ysw-SL-nJO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2K8-wV-aWU"/>
+                <constraint firstItem="OSf-9q-pnh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="135" id="Ghq-Lm-472"/>
+                <constraint firstAttribute="bottom" secondItem="Ysw-SL-nJO" secondAttribute="bottom" id="Kal-1Z-Odz"/>
+                <constraint firstItem="uCe-DJ-1KO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Mba-yG-Djx"/>
+                <constraint firstItem="uCe-DJ-1KO" firstAttribute="top" secondItem="OSf-9q-pnh" secondAttribute="bottom" constant="66" id="YEZ-QW-Dy8"/>
+                <constraint firstItem="OSf-9q-pnh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZL7-9X-xKM"/>
+                <constraint firstAttribute="trailing" secondItem="Ysw-SL-nJO" secondAttribute="trailing" id="j6H-uP-Dy0"/>
+                <constraint firstItem="Ysw-SL-nJO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vOI-7k-BOo"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="283" y="371"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="背景000.png" width="375" height="667"/>
+        <image name="输入框.png" width="230" height="66"/>
+    </resources>
+</document>

@@ -1,0 +1,23 @@
+//
+//  PrefixHeader.pch
+//  xiangmu
+//
+//  Created by tarena on 16/1/10.
+//  Copyright © 2016年 tarena. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <UIKit/UIKit.h>
+
+#define SJXMPPDOMAIN @"tarena.com"
+
+#define SJXMPPHOSTNAME @"127.0.0.1"
+
+#define SJXMPPPORT 5222
+
+#endif /* PrefixHeader_pch */
